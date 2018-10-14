@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,6 +53,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zM3-x2-kDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1168.8" y="121.88905547226388"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="G5A-ms-rtv">
+            <objects>
+                <viewController storyboardIdentifier="Test" id="MdE-JU-WwF" customClass="TestViewController" customModule="Polyglot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IRu-qI-eoI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="M9Y-0L-Wmc">
+                                <rect key="frame" x="68" y="290" width="239" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you say this in English?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-1r-dYv">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВЕРБЛЮД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkb-OC-qi6">
+                                        <rect key="frame" x="0.0" y="60.5" width="239" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M9Y-0L-Wmc" firstAttribute="centerY" secondItem="Qaj-s9-9hm" secondAttribute="centerY" id="Rwy-gt-zuI"/>
+                            <constraint firstItem="M9Y-0L-Wmc" firstAttribute="centerX" secondItem="Qaj-s9-9hm" secondAttribute="centerX" id="Tex-Tu-LfS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qaj-s9-9hm"/>
+                    </view>
+                    <connections>
+                        <outlet property="prompt" destination="zkb-OC-qi6" id="wlw-UY-u0h"/>
+                        <outlet property="stackView" destination="M9Y-0L-Wmc" id="aWh-Jm-cdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nM0-oI-2jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="snW-oP-jTI">

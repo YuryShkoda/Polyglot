@@ -16,6 +16,7 @@
 		D2D3E7232173B666008DBC81 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D3E7222173B666008DBC81 /* TodayViewController.swift */; };
 		D2D3E7262173B666008DBC81 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D3E7242173B666008DBC81 /* MainInterface.storyboard */; };
 		D2D3E72A2173B666008DBC81 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D3E71D2173B665008DBC81 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2D3E7322173C7D0008DBC81 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D3E7312173C7D0008DBC81 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D2D3E7272173B666008DBC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D3E72F2173BBD2008DBC81 /* Polyglot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Polyglot.entitlements; sourceTree = "<group>"; };
 		D2D3E7302173BC39008DBC81 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		D2D3E7312173C7D0008DBC81 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		D2D3E70621738AC7008DBC81 /* Polyglot */ = {
 			isa = PBXGroup;
 			children = (
+				D2D3E7312173C7D0008DBC81 /* TestViewController.swift */,
 				D2D3E72F2173BBD2008DBC81 /* Polyglot.entitlements */,
 				D2D3E70721738AC7008DBC81 /* AppDelegate.swift */,
 				D2D3E70921738AC7008DBC81 /* ViewController.swift */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D3E70A21738AC7008DBC81 /* ViewController.swift in Sources */,
+				D2D3E7322173C7D0008DBC81 /* TestViewController.swift in Sources */,
 				D2D3E70821738AC7008DBC81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Polyglot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Polyglot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

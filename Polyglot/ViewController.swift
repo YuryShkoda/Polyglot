@@ -19,7 +19,9 @@ class ViewController: UITableViewController {
         navigationController?.navigationBar.titleTextAttributes = titleAttributes
         title = "POLYGLOT"
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewWords))
+        navigationItem.leftBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewWords))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(startTest))
+        navigationItem.backBarButtonItem  = UIBarButtonItem(title: "End Test", style: .plain, target: nil, action: nil)
         
         if let defaults = UserDefaults(suiteName: "group.com.YuryShkoda.Polyglot") {
             if let savedWords = defaults.object(forKey: "Words") as? [String] {
@@ -70,6 +72,14 @@ class ViewController: UITableViewController {
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
         present(ac, animated: true)
+    }
+    
+    @objc func startTest() {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "Test") as? TestViewController else { return }
+        
+        vc.words = words
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func insertFlashcard(first: String, second: String) {
