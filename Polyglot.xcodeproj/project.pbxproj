@@ -12,7 +12,35 @@
 		D2D3E70D21738AC7008DBC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D3E70B21738AC7008DBC81 /* Main.storyboard */; };
 		D2D3E70F21738ACA008DBC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D3E70E21738ACA008DBC81 /* Assets.xcassets */; };
 		D2D3E71221738ACA008DBC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D3E71021738ACA008DBC81 /* LaunchScreen.storyboard */; };
+		D2D3E7202173B665008DBC81 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D3E71F2173B665008DBC81 /* NotificationCenter.framework */; };
+		D2D3E7232173B666008DBC81 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D3E7222173B666008DBC81 /* TodayViewController.swift */; };
+		D2D3E7262173B666008DBC81 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D3E7242173B666008DBC81 /* MainInterface.storyboard */; };
+		D2D3E72A2173B666008DBC81 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D3E71D2173B665008DBC81 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2D3E7282173B666008DBC81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D3E6FC21738AC7008DBC81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D3E71C2173B665008DBC81;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2D3E72E2173B666008DBC81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2D3E72A2173B666008DBC81 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D2D3E70421738AC7008DBC81 /* Polyglot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polyglot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +50,13 @@
 		D2D3E70E21738ACA008DBC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D3E71121738ACA008DBC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2D3E71321738ACA008DBC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D3E71D2173B665008DBC81 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D3E71F2173B665008DBC81 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D2D3E7222173B666008DBC81 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D2D3E7252173B666008DBC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D2D3E7272173B666008DBC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D3E72F2173BBD2008DBC81 /* Polyglot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Polyglot.entitlements; sourceTree = "<group>"; };
+		D2D3E7302173BC39008DBC81 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2D3E71A2173B665008DBC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D3E7202173B665008DBC81 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D2D3E70621738AC7008DBC81 /* Polyglot */,
+				D2D3E7212173B665008DBC81 /* Widget */,
+				D2D3E71E2173B665008DBC81 /* Frameworks */,
 				D2D3E70521738AC7008DBC81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D3E70421738AC7008DBC81 /* Polyglot.app */,
+				D2D3E71D2173B665008DBC81 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +100,7 @@
 		D2D3E70621738AC7008DBC81 /* Polyglot */ = {
 			isa = PBXGroup;
 			children = (
+				D2D3E72F2173BBD2008DBC81 /* Polyglot.entitlements */,
 				D2D3E70721738AC7008DBC81 /* AppDelegate.swift */,
 				D2D3E70921738AC7008DBC81 /* ViewController.swift */,
 				D2D3E70B21738AC7008DBC81 /* Main.storyboard */,
@@ -62,6 +109,25 @@
 				D2D3E71321738ACA008DBC81 /* Info.plist */,
 			);
 			path = Polyglot;
+			sourceTree = "<group>";
+		};
+		D2D3E71E2173B665008DBC81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D3E71F2173B665008DBC81 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2D3E7212173B665008DBC81 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D2D3E7302173BC39008DBC81 /* Widget.entitlements */,
+				D2D3E7222173B666008DBC81 /* TodayViewController.swift */,
+				D2D3E7242173B666008DBC81 /* MainInterface.storyboard */,
+				D2D3E7272173B666008DBC81 /* Info.plist */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +140,34 @@
 				D2D3E70021738AC7008DBC81 /* Sources */,
 				D2D3E70121738AC7008DBC81 /* Frameworks */,
 				D2D3E70221738AC7008DBC81 /* Resources */,
+				D2D3E72E2173B666008DBC81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2D3E7292173B666008DBC81 /* PBXTargetDependency */,
 			);
 			name = Polyglot;
 			productName = Polyglot;
 			productReference = D2D3E70421738AC7008DBC81 /* Polyglot.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D2D3E71C2173B665008DBC81 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D3E72B2173B666008DBC81 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				D2D3E7192173B665008DBC81 /* Sources */,
+				D2D3E71A2173B665008DBC81 /* Frameworks */,
+				D2D3E71B2173B665008DBC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = D2D3E71D2173B665008DBC81 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +181,19 @@
 				TargetAttributes = {
 					D2D3E70321738AC7008DBC81 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D2D3E71C2173B665008DBC81 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				D2D3E70321738AC7008DBC81 /* Polyglot */,
+				D2D3E71C2173B665008DBC81 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +227,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2D3E71B2173B665008DBC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D3E7262173B666008DBC81 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2D3E7192173B665008DBC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D3E7232173B666008DBC81 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2D3E7292173B666008DBC81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D3E71C2173B665008DBC81 /* Widget */;
+			targetProxy = D2D3E7282173B666008DBC81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D2D3E70B21738AC7008DBC81 /* Main.storyboard */ = {
@@ -157,6 +280,14 @@
 				D2D3E71121738ACA008DBC81 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D3E7242173B666008DBC81 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D3E7252173B666008DBC81 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +412,9 @@
 		D2D3E71721738ACA008DBC81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Polyglot/Polyglot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Polyglot/Info.plist;
@@ -299,7 +432,9 @@
 		D2D3E71821738ACA008DBC81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Polyglot/Polyglot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F524X8MS5B;
 				INFOPLIST_FILE = Polyglot/Info.plist;
@@ -309,6 +444,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YuryShkoda.Polyglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2D3E72C2173B666008DBC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X8MS5B;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuryShkoda.Polyglot.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2D3E72D2173B666008DBC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F524X8MS5B;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuryShkoda.Polyglot.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +506,15 @@
 			buildConfigurations = (
 				D2D3E71721738ACA008DBC81 /* Debug */,
 				D2D3E71821738ACA008DBC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D3E72B2173B666008DBC81 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D3E72C2173B666008DBC81 /* Debug */,
+				D2D3E72D2173B666008DBC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

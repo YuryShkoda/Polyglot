@@ -21,12 +21,12 @@ class ViewController: UITableViewController {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewWords))
         
-        let defaults = UserDefaults.standard
-        
-        if let savedWords = defaults.object(forKey: "Words") as? [String] {
-            words = savedWords
-        } else {
-            saveInitialValues(to: defaults)
+        if let defaults = UserDefaults(suiteName: "group.com.YuryShkoda.Polyglot") {
+            if let savedWords = defaults.object(forKey: "Words") as? [String] {
+                words = savedWords
+            } else {
+                saveInitialValues(to: defaults)
+            }
         }
     }
     
@@ -45,8 +45,9 @@ class ViewController: UITableViewController {
     }
     
     func saveWords() {
-        let defaults = UserDefaults.standard
-        defaults.set(words, forKey: "Words")
+        if let defaults = UserDefaults(suiteName: "group.com.YuryShkoda.Polyglot") {
+            defaults.set(words, forKey: "Words")
+        }
     }
     
     @objc func addNewWords() {
